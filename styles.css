@@ -65,3 +65,70 @@ body {
     text-align: center;
     color: blue;
 }
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #5dafb8;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card1 {
+    height: 50vh;
+    border-radius: 13px;
+    box-shadow: 20px 40px 33px rgba(0,0,0,0.3);
+    padding: 2rem;
+    width: 35vh;
+    background-color:  #6cc2ce;
+
+}
+
+/* Style a div with gradient as Background image */
+.image {
+    width: 35vh;
+    height: 20vh;
+    background-image: linear-gradient(70deg, RoyalBlue   , DarkTurquoise );
+    background-size: cover;
+    background-position: center center;
+    box-shadow:  10px 15px 15px 6px #3891b4;
+    border-radius: 15px;
+
+}
+.card1 h2 {
+    /* Animate Heading, fades in from left to right */
+animation: animTitle 2.5s infinite;
+} 
+
+.card1 p {
+    /* Animate Paragraph, fades in from right to left */
+animation: animContent 5s infinite;
+}
+
+
+@keyframes animTitle {
+from {
+        /* Add starting values for animation */
+        transform: translateX(-50px);
+        opacity: 0;
+} 
+to  {
+        /* Add Ending values for animation */
+        transform: translateX(0);
+        opacity: 1;
+} 
+}
+
+@keyframes animContent {
+from {
+        /* Add starting values for animation */
+        transform: translateX(50px);
+        opacity: 0;
+} 
+to  {
+        /* Add Ending values for animation */
+        transform: translateX(0);
+        opacity: 1;
+} 
+}
